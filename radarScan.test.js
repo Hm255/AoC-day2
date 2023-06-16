@@ -15,22 +15,31 @@ describe('Radar Scan', () => {
     it('returns 1 when one increase is spotted', () => {
         input=`10
         20`;
-        expect(radarScan(input)).toBe(1);
+        expect(radarScan(input)).toEqual([1, 0]);
     });
     it('returns 2 when two increases are spotted', () => {
         input=`10
         20
         30`;
-        expect(radarScan(input)).toBe(2);
+        expect(radarScan(input)).toEqual([2, 0]);
     });
     it('returns 0 when no increases are spotted', () => {
         input=`30
         20
         10`;
-        expect(radarScan(input)).toBe(0);
+        expect(radarScan(input)).toEqual([0, 0]);
     });
-    it('returns the correct output(1121)', () => {
-        input=``;
-        expect(radarScan(input)).toBe(1121);
+    it('returns the correct output for AoC day1 2021 pt1 (1121) pt2(1065)', () => {
+        input=``; //full input
+        expect(radarScan(input)).toEqual([1121, 1065]);
+    });
+    it('adds 3 numbers within the input together and reads the increase of the combined final 3 nums', () => {
+        input=`10
+        20
+        30
+        40
+        50
+        60`;
+        expect(radarScan(input)).toStrictEqual([5, 3]);
     });
 });
