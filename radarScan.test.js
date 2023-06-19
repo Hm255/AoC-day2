@@ -30,7 +30,7 @@ describe('Radar Scan', () => {
         expect(radarScan(input)).toEqual([0, 0]);
     });
     it('returns the correct output for AoC day1 2021 pt1 (1121) pt2(1065)', () => {
-        input=``; //full input
+        input=``; //my full puzzle input passes this test
         expect(radarScan(input)).toEqual([1121, 1065]);
     });
     it('adds 3 numbers within the input together and reads the increase of the combined final 3 nums', () => {
