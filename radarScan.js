@@ -17,7 +17,7 @@ function radarScan(input){
         if(a && b && c){
             threeNums = a+b+c;
             numArr.push(threeNums)
-            console.log(threeNums)
+            
         }
     }
     numArr.forEach((e, i) => {
