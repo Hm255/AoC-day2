@@ -23,7 +23,7 @@ describe('Radar Scan', () => {
         30`;
         expect(radarScan(input)).toEqual([2, 0]);
     });
-    it('returns 0 when no increases are spotted', () => {
+    it('returns 0 when there is no increase', () => {
         input=`30
         20
         10`;
