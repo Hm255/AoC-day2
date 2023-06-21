@@ -25,7 +25,7 @@ function radarScan(input){
             groupedIncreases += 1;
         }
     })
-    console.log(input, heights, numArr, increases, groupedIncreases)
+    // console.log(input, heights, numArr, increases, groupedIncreases)
    return heights.length === 1? 0 : [increases, groupedIncreases]
 }
 module.exports = radarScan;
